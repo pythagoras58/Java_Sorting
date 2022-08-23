@@ -1,9 +1,12 @@
+import Utility.Utilities;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class StringSorting {
     public static void main(String[] args) {
         ArrayList<String> musicList = new ArrayList<>();
+
 
         musicList.add("Love");
         musicList.add("Peace");
@@ -12,18 +15,19 @@ public class StringSorting {
         musicList.add("Faith");
 
         System.out.println("[UNSORTED]->" + musicList);
-        iteratedSort(musicList);
+
+        Utility.Utilities.iteratedStringSort(musicList);
 
         Collections.sort(musicList);
 
         System.out.println("[SORTED]-> " + musicList);
 
-        iteratedSort(musicList);
+
+        Utility.Utilities.iteratedStringSort(musicList);
+
+        System.out.println("========ANY LIST =====");
+        Utilities.iterateAnyList(musicList);
     }
 
-    private static void iteratedSort(ArrayList<String> musicList) {
-        for(String items : musicList){
-            System.out.println("[ITEMS]->" + items);
-        }
-    }
+
 }

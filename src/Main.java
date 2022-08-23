@@ -1,3 +1,5 @@
+import Utility.Utilities;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -20,8 +22,8 @@ public class Main {
         Collections.sort(integerArrayList);
         System.out.println("[SORTED]->" + integerArrayList);
 
-        for(Integer item : integerArrayList){
-            System.out.println("[ITEM] -> " + item);
-        }
+        Utilities.iterateIntegerList(integerArrayList);
     }
+
+
 }
