@@ -19,6 +19,7 @@ public class DupicateCounter {
                 System.out.println("Dublicate found");
             }else{
                 System.out.println("No duplicate found");
+                System.out.println("No duplicate found");
             }
         }
 
